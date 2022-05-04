@@ -20,9 +20,6 @@ set undoreload=10000
 
 set tabpagemax=15
 set showmode
-set cursorline
-highlight clear SignColumn
-highlight clear LineNr
 
 
 set ruler                   " Show the ruler
@@ -114,9 +111,14 @@ endfunction
 
 syntax enable
 set background=dark
+set termguicolors
 runtime .colors/solarized.vim
 colorscheme solarized
 
+set cursorline
+highlight CursorLine guibg=Grey30
+highlight clear SignColumn
+highlight clear LineNr
 
 
 " Change working directory to that of current file
