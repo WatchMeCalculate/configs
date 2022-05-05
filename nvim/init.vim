@@ -84,6 +84,7 @@ set lazyredraw
 
 
 
+autocmd BufNewFile,BufRead *.md set filetype=markdown
 autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl,sql autocmd BufWritePre <buffer> if !exists('g:ww_keep_trailing_whitespace') | call StripTrailingWhitespace() | endif
 autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
 autocmd FileType haskell,puppet,ruby,yml setlocal expandtab shiftwidth=2 softtabstop=2
@@ -92,6 +93,8 @@ autocmd FileType javascript setlocal expandtab shiftwidth=2 softtabstop=2
 autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 autocmd FileType haskell setlocal commentstring=--\ %s
 autocmd FileType haskell,rust setlocal nospell
+
+set suffixesadd=.js,.es,.jsx,.json,.css,.less,.sass,.styl,.php,.py,.md
 
 nnoremap Y y$
 
@@ -119,6 +122,10 @@ set cursorline
 highlight CursorLine guibg=Grey30
 highlight clear SignColumn
 highlight clear LineNr
+highlight Pmenu guibg=Black40
+highlight PmenuSel guibg=Grey20
+
+
 
 
 " Change working directory to that of current file

@@ -14,6 +14,6 @@ NVIM
 
 ```
 npm i -g typescript typescript-language-server
-npm i -g  diagnostic-languageserver eslint_d prettier
+npm i -g  diagnostic-languageserver eslint_d prettier_d_slim
 
 ```
