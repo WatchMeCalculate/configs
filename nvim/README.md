@@ -1,19 +1,18 @@
-NVIM
-=======
-
+# NVIM
 
 ### Dependencies
 
-1. Vim-Plug:
-``` sh -c 'curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs \
-       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+1. Packer:
+
+```git clone --depth 1 https://github.com/wbthomason/packer.nvim\
+~/.config/nvim/site/pack/packer/start/packer.nvim
 ```
+
 2. tree-sitter
 
 3. npm installs
 
 ```
-npm i -g typescript typescript-language-server
-npm i -g  diagnostic-languageserver eslint_d prettier_d_slim
+npm i -g typescript typescript-language-server tailwindcss-language-server diagnostic-languageserver eslint_d @fsouza/prettierd
 
 ```
